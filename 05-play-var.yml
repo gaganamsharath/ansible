@@ -1,0 +1,10 @@
+- name: Playbook with Variables
+  hosts: local
+  connection: local
+  become: true
+  vars:
+    my_variable: "Hello from Ansible Variable"
+  tasks:
+    - name: Print the variable
+      ansible.builtin.debug:
+        msg: "{{ my_variable }}"
