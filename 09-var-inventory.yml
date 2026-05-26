@@ -1,0 +1,8 @@
+- name: variable inventory example
+  hosts: local
+  connection: local
+
+  tasks:
+    - name: Print the user name from variable inventory
+      ansible.builtin.debug:
+        msg: "Hello {{ user_name }}, welcome to the Ansible course!"
