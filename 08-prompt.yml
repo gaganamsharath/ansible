@@ -7,7 +7,7 @@
         name: "user_name"
         prompt: "Please enter your name"
         private: no
-
+  tasks:      
     - name: Print the user input
       ansible.builtin.debug:
         msg: "Hello {{ user_name }}, welcome to the Ansible course!"
