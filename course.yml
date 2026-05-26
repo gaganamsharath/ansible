@@ -1,0 +1,30 @@
+course_name: "Ansible for Beginners"
+Duration: "4 weeks"
+trainer: "John Doe"
+course_description: "This course is designed for beginners to learn Ansible from scratch. It covers the basics of Ansible, including installation, configuration, and usage. By the end of the course, students will have a solid understanding of Ansible and be able to automate their IT infrastructure effectively."
+course_outline:
+  - Introduction to Ansible
+  - Installing Ansible
+  - Ansible Inventory
+  - Ansible Playbooks
+  - Ansible Modules
+  - Ansible Variables
+  - Ansible Handlers
+  - Ansible Roles
+  - Ansible Galaxy
+  - Ansible Best Practices
+course_objectives:
+  - Understand the basics of Ansible and its architecture
+  - Install and configure Ansible on different platforms
+  - Create and manage Ansible inventory files
+  - Write and execute Ansible playbooks
+  - Use Ansible modules to automate tasks
+  - Work with Ansible variables and handlers
+  - Create and use Ansible roles for better organization
+  - Explore Ansible Galaxy for sharing and reusing roles
+  - Follow best practices for writing efficient and maintainable Ansible code
+course_prerequisites:
+  - Basic understanding of Linux command line
+  - Familiarity with YAML syntax is a plus but not required
+  - No prior experience with Ansible is necessary, as this course is designed for beginners   
+  

@@ -1,0 +1,13 @@
+- name: Playbook with Variables
+  hosts: local
+  connection: local
+  vars_files:
+    - course.yml
+  tasks:
+    - name: Print the variable
+      ansible.builtin.debug:
+        msg: "Hello Course Name: {{ course_name }}, Duration: {{ Duration }}, Trainer: {{ trainer }}. Thanks for joining the course!"
+        msg: "{{course_description}}"
+        msg: "{{course_outline}}"
+        msg: "{{course_prerequisites}}"
+        
