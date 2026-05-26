@@ -15,3 +15,8 @@
         trainer: "John Snow"
       ansible.builtin.debug:
         msg: "Hello Course Name: {{ course_name }}, Duration: {{ Duration }}, Trainer: {{ trainer }}. Thanks for joining the course!"
+
+  tasks:
+    - name: Print the variable
+      ansible.builtin.debug:
+        msg: "Hello Course Name: {{ course_name }}, Duration: {{ Duration }}, Trainer: {{ trainer }}. Thanks for joining the course!"
