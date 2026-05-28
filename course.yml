@@ -27,4 +27,4 @@ course_prerequisites:
   - Basic understanding of Linux command line
   - Familiarity with YAML syntax is a plus but not required
   - No prior experience with Ansible is necessary, as this course is designed for beginners   
-  
+greetings: "Welcome to the Ansible for Beginners course! We are excited to have you on board and look forward to helping you learn Ansible from scratch. This course is designed to be hands-on and practical, so be prepared to get your hands dirty with some coding and automation. Let's get started!"
