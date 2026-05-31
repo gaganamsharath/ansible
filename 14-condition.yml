@@ -3,7 +3,7 @@
   connection: local
 
   vars:
-    is_production: false
+    is_production: true
 
   tasks:
     - name: Print a message based on the environment
