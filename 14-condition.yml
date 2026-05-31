@@ -1,1 +1,17 @@
--name
+- name: conditional statements in ansible
+  hosts: localhost
+  connection: local
+
+  vars:
+    is_production: false
+
+  tasks:
+    - name: Print a message based on the environment
+      ansible.builtin.debug:
+        msg: "This is a production environment."
+      when: is_production
+
+    - name: Print a message for non-production environment
+      ansible.builtin.debug:
+        msg: "This is not a production environment."
+      when: not is_production
