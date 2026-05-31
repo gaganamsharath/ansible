@@ -1,17 +1,21 @@
-- name: understans vars preference
+- name: understand vars preference
   hosts: localhost
   connection: local
+
   vars:
     greeting: "Hello from vars"
+
   vars_files:
     - course.yml
+
   vars_prompt:
     - name: greeting
       prompt: "Please enter a greeting message"
       private: false
+
   tasks:
     - name: Print the greeting message
       vars:
         greeting: "Hello from task vars"
-        ansible.builtin.debug:
-          msg: "{{ greeting }}"
+      ansible.builtin.debug:
+        msg: "{{ greeting }}"
