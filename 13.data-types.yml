@@ -1,0 +1,27 @@
+- name: ansible data types
+  hosts: local
+  connection: local
+
+  vars:
+    string_var: "This is a string"
+    int_var: 42
+    float_var: 3.14
+    bool_var: true
+    list_var:
+      - teraform
+      - linux
+      - ansible
+    dict_var:
+      CI: Jenkins
+      CD: GitLab 
+
+  tasks:
+    - name: Print all variables
+      ansible.builtin.debug:
+        msg:
+          - "String variable: {{ string_var }}"
+          - "Integer variable: {{ int_var }}"
+          - "Float variable: {{ float_var }}"
+          - "Boolean variable: {{ bool_var }}"
+          - "List variable: {{ list_var }}"
+          - "Dictionary variable: {{ dict_var }}"
